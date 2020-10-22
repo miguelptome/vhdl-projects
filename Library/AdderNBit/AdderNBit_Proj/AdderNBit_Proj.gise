@@ -47,6 +47,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1603399780" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1603399780">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1603400810" xil_pn:in_ck="1616379600315674511" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1603400810">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -71,7 +72,7 @@
     </transform>
     <transform xil_pn:end_ts="1603400817" xil_pn:in_ck="1616379600315674511" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6501651888556713502" xil_pn:start_ts="1603400813">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>

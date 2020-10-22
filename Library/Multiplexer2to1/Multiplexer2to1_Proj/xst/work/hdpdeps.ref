@@ -1,0 +1,8 @@
+V3 3
+FL C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj/MUX2_1.vhd 2020/10/22.23:27:46 P.20131013
+EN work/MUX2_1 1603405689 \
+      FL C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj/MUX2_1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/MUX2_1/Behavioral 1603405690 \
+      FL C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj/MUX2_1.vhd \
+      EN work/MUX2_1 1603405689
