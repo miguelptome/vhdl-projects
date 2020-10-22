@@ -1,0 +1,8 @@
+V3 3
+FL C:/project/GIT/vhdl-projects/Library/Adder1Bit/Adder1Bit_Proj/FA.vhd 2020/10/22.19:56:54 P.20131013
+EN work/FA 1603393056 \
+      FL C:/project/GIT/vhdl-projects/Library/Adder1Bit/Adder1Bit_Proj/FA.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/FA/Behavioral 1603393057 \
+      FL C:/project/GIT/vhdl-projects/Library/Adder1Bit/Adder1Bit_Proj/FA.vhd \
+      EN work/FA 1603393056

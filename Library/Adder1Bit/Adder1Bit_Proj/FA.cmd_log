@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/project/GIT/vhdl-projects/Library/Adder1Bit/Adder1Bit_Proj/FA.xst" -ofn "C:/project/GIT/vhdl-projects/Library/Adder1Bit/Adder1Bit_Proj/FA.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xc95144xl-TQ100-10 FA.ngc FA.ngd  
+cpldfit -intstyle ise -p xc95144xl-10-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper FA.ngd 
+XSLTProcess FA_build.xml 
+tsim -intstyle ise FA FA.nga 
+taengine -intstyle ise -f FA -w --format html1 -l FA_html/tim/timing_report.htm 
