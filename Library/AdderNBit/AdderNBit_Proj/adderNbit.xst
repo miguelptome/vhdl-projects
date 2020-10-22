@@ -1,0 +1,5 @@
+set -tmpdir "C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj/xst/projnav.tmp"
+set -xsthdpdir "C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj/xst"
+elaborate
+-ifn adderNbit.prj
+-ifmt mixed

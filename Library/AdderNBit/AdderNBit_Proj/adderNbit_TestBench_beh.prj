@@ -1,0 +1,3 @@
+vhdl work "FA.vhd"
+vhdl work "adderNbit.vhd"
+vhdl work "adderNbit_TestBench.vhd"

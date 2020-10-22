@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-10-22T21:31:48</DateModified>
+  <DateModified>2020-10-22T21:32:39</DateModified>
   <ModuleName>adder3bit</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/project/GIT/vhdl-projects/Library/Adder3Bit/Adder3Bit_Proj/iseconfig/adder3bit.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/project/GIT/vhdl-projects/Library/Adder3Bit/Adder3Bit_Proj\</ImplementationReportsDirectory>
-  <DateInitialized>2020-10-22T21:02:03</DateInitialized>
+  <SavedFilePath>C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj/iseconfig/adder3bit.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj</ImplementationReportsDirectory>
+  <DateInitialized>2020-10-22T21:32:39</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

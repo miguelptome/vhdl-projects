@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj/adderNbit_TestBench_isim_beh.exe" -prj "C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj/adderNbit_TestBench_beh.prj" "work.adderNbit_TestBench" 

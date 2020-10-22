@@ -1,0 +1,2 @@
+vhdl isim_temp "FA.vhd"
+vhdl isim_temp "Adder1Bit_TestBench.vhd"
