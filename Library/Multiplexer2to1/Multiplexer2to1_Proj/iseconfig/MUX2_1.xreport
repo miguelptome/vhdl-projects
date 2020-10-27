@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-10-22T23:16:59</DateModified>
+  <DateModified>2020-10-27T19:37:36</DateModified>
   <ModuleName>MUX2_1</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj/iseconfig/MUX2_1.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj\</ImplementationReportsDirectory>
   <DateInitialized>2020-10-22T23:16:58</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

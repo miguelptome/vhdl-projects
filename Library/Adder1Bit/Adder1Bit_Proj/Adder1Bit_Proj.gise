@@ -90,6 +90,7 @@
     <transform xil_pn:end_ts="1603394448" xil_pn:in_ck="6524068822711258454" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4808797516542941576" xil_pn:start_ts="1603394445">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Adder1Bit_TestBench_beh.prj"/>
@@ -102,6 +103,8 @@
     <transform xil_pn:end_ts="1603394675" xil_pn:in_ck="-7303500959815095084" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3648316647738767253" xil_pn:start_ts="1603394675">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Adder1Bit_TestBench_isim_beh.wdb"/>

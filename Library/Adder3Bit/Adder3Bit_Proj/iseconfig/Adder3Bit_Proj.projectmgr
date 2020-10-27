@@ -76,7 +76,6 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/adder3bit - Structural C:|project|GIT|vhdl-projects|Library|Adder3Bit|Adder3Bit_Proj|adder3bit.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>adder3bit - Structural (C:/project/GIT/vhdl-projects/Library/Adder3Bit/Adder3Bit_Proj/adder3bit.vhd)</SelectedItem>

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-10-22T23:10:24</DateModified>
+  <DateModified>2020-10-27T19:32:51</DateModified>
   <ModuleName>adderNbit</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj/iseconfig/adderNbit.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/project/GIT/vhdl-projects/Library/AdderNBit/AdderNBit_Proj\</ImplementationReportsDirectory>
   <DateInitialized>2020-10-22T23:10:24</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
