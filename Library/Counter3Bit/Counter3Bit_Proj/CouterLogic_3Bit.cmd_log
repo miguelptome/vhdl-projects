@@ -1,0 +1,1 @@
+vhdtdtfi -prj Counter3Bit_Proj -o C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/CouterLogic_3Bit.vhi -module CouterLogic_3Bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work FA.vhd -lib work MUX2_1.vhd -lib work adderNbit.vhd -lib work CouterLogic_3Bit.vhd 

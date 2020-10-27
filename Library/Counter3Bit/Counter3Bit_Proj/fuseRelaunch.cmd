@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/counter_3bit_isim_beh.exe" -prj "C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/counter_3bit_beh.prj" "work.counter_3bit" 

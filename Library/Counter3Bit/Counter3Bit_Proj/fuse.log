@@ -1,0 +1,27 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/counter_3bit_isim_beh.exe -prj C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/counter_3bit_beh.prj work.counter_3bit 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/FA.vhd" into library work
+Parsing VHDL file "C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/MUX2_1.vhd" into library work
+Parsing VHDL file "C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/adderNbit.vhd" into library work
+Parsing VHDL file "C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/register_D_R.vhd" into library work
+Parsing VHDL file "C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/CouterLogic_3Bit.vhd" into library work
+Parsing VHDL file "C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/counter_3bit.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity MUX2_1 [\MUX2_1(3)\]
+Compiling architecture behavioral of entity FA [fa_default]
+Compiling architecture structural of entity adderNbit [\adderNbit(3)\]
+Compiling architecture structural of entity CouterLogic_3Bit [couterlogic_3bit_default]
+Compiling architecture behavioral of entity register_D_R [\register_D_R(3)\]
+Compiling architecture structural of entity counter_3bit
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/counter_3bit_isim_beh.exe
+Fuse Memory Usage: 30152 KB
+Fuse CPU Usage: 562 ms

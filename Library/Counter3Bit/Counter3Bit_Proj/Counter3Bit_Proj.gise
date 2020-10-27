@@ -19,60 +19,62 @@
 
   <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
 
-  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="CouterLogic3Bit.xise"/>
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Counter3Bit_Proj.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="CouterLogic_3Bit.vhi"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CouterLogic_3Bit_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CouterLogic_3Bit_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CouterLogic_3Bit_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CouterLogic_3Bit_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="MUX2_1.vhi"/>
-    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="adderNbit.vhi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_3bit_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="counter_3bit_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="counter_3bit_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="counter_3bit_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="register_D_R.vhi"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1603829031" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1603829031">
+    <transform xil_pn:end_ts="1603836747" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1603836747">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1603829031" xil_pn:in_ck="3665361717083948673" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1603829031">
+    <transform xil_pn:end_ts="1603837252" xil_pn:in_ck="486721840865270475" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1603837252">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="CouterLogic_3Bit.vhd"/>
       <outfile xil_pn:name="FA.vhd"/>
       <outfile xil_pn:name="MUX2_1.vhd"/>
       <outfile xil_pn:name="adderNbit.vhd"/>
+      <outfile xil_pn:name="counter_3bit.vhd"/>
+      <outfile xil_pn:name="register_D_R.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1603829081" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6098899800646753216" xil_pn:start_ts="1603829081">
+    <transform xil_pn:end_ts="1603836885" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-335960678408089760" xil_pn:start_ts="1603836885">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1603829082" xil_pn:in_ck="3665361717083948673" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1603829081">
+    <transform xil_pn:end_ts="1603837256" xil_pn:in_ck="486721840865270475" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1603837256">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="CouterLogic_3Bit.vhd"/>
       <outfile xil_pn:name="FA.vhd"/>
       <outfile xil_pn:name="MUX2_1.vhd"/>
       <outfile xil_pn:name="adderNbit.vhd"/>
+      <outfile xil_pn:name="counter_3bit.vhd"/>
+      <outfile xil_pn:name="register_D_R.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1603829086" xil_pn:in_ck="3665361717083948673" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5102020877608587317" xil_pn:start_ts="1603829082">
+    <transform xil_pn:end_ts="1603837260" xil_pn:in_ck="486721840865270475" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4758228467144895861" xil_pn:start_ts="1603837256">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="CouterLogic_3Bit_beh.prj"/>
-      <outfile xil_pn:name="CouterLogic_3Bit_isim_beh.exe"/>
+      <outfile xil_pn:name="counter_3bit_beh.prj"/>
+      <outfile xil_pn:name="counter_3bit_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1603829086" xil_pn:in_ck="1760057403904056992" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5905613494975391038" xil_pn:start_ts="1603829086">
+    <transform xil_pn:end_ts="1603837260" xil_pn:in_ck="4639423535506654656" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2031287491170145410" xil_pn:start_ts="1603837260">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="CouterLogic_3Bit_isim_beh.wdb"/>
+      <outfile xil_pn:name="counter_3bit_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
     </transform>
   </transforms>

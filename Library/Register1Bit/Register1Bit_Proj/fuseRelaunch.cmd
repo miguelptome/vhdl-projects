@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/project/GIT/vhdl-projects/Library/Register1Bit/Register1Bit_Proj/register_D_isim_beh.exe" -prj "C:/project/GIT/vhdl-projects/Library/Register1Bit/Register1Bit_Proj/register_D_beh.prj" "work.register_D" 
