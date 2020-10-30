@@ -1,4 +1,0 @@
-vhdl isim_temp "FA.vhd"
-vhdl isim_temp "MUX2_1.vhd"
-vhdl isim_temp "adderNbit.vhd"
-vhdl isim_temp "CouterLogic_3Bit.vhd"

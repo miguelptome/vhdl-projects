@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/project/GIT/vhdl-projects/Library/CounterLogic3Bit/CouterLogic3Bit/CouterLogic_3Bit_isim_beh.exe" -prj "C:/project/GIT/vhdl-projects/Library/CounterLogic3Bit/CouterLogic3Bit/CouterLogic_3Bit_beh.prj" "work.CouterLogic_3Bit" 

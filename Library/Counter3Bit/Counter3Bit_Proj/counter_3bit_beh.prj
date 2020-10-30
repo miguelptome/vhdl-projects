@@ -1,6 +1,0 @@
-vhdl work "FA.vhd"
-vhdl work "MUX2_1.vhd"
-vhdl work "adderNbit.vhd"
-vhdl work "register_D_R.vhd"
-vhdl work "CouterLogic_3Bit.vhd"
-vhdl work "counter_3bit.vhd"

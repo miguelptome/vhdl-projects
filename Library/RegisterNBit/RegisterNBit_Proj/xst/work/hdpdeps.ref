@@ -1,8 +1,0 @@
-V3 3
-FL C:/project/GIT/vhdl-projects/Library/RegisterNBit/RegisterNBit_Proj/register_D.vhd 2020/10/27.20:52:50 P.20131013
-EN work/register_D 1603832006 \
-      FL C:/project/GIT/vhdl-projects/Library/RegisterNBit/RegisterNBit_Proj/register_D.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/register_D/Behavioral 1603832007 \
-      FL C:/project/GIT/vhdl-projects/Library/RegisterNBit/RegisterNBit_Proj/register_D.vhd \
-      EN work/register_D 1603832006

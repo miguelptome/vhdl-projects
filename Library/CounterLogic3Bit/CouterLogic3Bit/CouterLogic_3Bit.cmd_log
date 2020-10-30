@@ -1,1 +1,0 @@
-vhdtdtfi -prj CouterLogic3Bit -o C:/project/GIT/vhdl-projects/Library/CounterLogic3Bit/CouterLogic3Bit/CouterLogic_3Bit.vhi -module CouterLogic_3Bit -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work CouterLogic_3Bit.vhd 

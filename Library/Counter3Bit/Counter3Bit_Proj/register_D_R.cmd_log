@@ -1,1 +1,0 @@
-vhdtdtfi -prj Counter3Bit_Proj -o C:/project/GIT/vhdl-projects/Library/Counter3Bit/Counter3Bit_Proj/register_D_R.vhi -module register_D_R -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work register_D_R.vhd 

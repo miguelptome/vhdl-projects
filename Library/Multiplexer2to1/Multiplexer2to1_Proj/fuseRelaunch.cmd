@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj/MUX2_1_isim_beh.exe" -prj "C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj/MUX2_1_beh.prj" "work.MUX2_1" 

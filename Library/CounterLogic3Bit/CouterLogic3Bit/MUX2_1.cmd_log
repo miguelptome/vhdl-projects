@@ -1,2 +1,0 @@
-vhdtdtfi -prj CouterLogic3Bit -o C:/project/GIT/vhdl-projects/Library/CounterLogic3Bit/CouterLogic3Bit/MUX2_1.vhi -module MUX2_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MUX2_1.vhd 
-vhdtdtfi -prj CouterLogic3Bit -o C:/project/GIT/vhdl-projects/Library/CounterLogic3Bit/CouterLogic3Bit/MUX2_1.vhi -module MUX2_1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work MUX2_1.vhd 

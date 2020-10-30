@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj/MUX2_1.xst" -ofn "C:/project/GIT/vhdl-projects/Library/Multiplexer2to1/Multiplexer2to1_Proj/MUX2_1.syr" 

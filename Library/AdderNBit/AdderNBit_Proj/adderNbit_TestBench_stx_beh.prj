@@ -1,3 +1,0 @@
-vhdl isim_temp "FA.vhd"
-vhdl isim_temp "adderNbit.vhd"
-vhdl isim_temp "adderNbit_TestBench.vhd"

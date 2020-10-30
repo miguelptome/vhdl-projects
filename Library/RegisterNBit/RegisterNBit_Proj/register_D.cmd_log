@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "C:/project/GIT/vhdl-projects/Library/RegisterNBit/RegisterNBit_Proj/register_D.xst" -ofn "C:/project/GIT/vhdl-projects/Library/RegisterNBit/RegisterNBit_Proj/register_D.syr" 
