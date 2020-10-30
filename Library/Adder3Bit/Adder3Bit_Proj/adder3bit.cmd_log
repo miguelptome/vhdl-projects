@@ -1,1 +1,0 @@
-xst -intstyle ise -ifn "C:/project/GIT/vhdl-projects/Library/Adder3Bit/Adder3Bit_Proj/adder3bit.xst" -ofn "C:/project/GIT/vhdl-projects/Library/Adder3Bit/Adder3Bit_Proj/adder3bit.syr" 
