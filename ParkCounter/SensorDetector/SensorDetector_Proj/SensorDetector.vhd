@@ -80,7 +80,7 @@ begin
 			--
 			when STATE_OUT1		=> if (S1 = '1') then NS <= STATE_OUT1;
 											elsif (S0 = '0') then NS <= STATE_IDLE;
-											else NS <= STATE_OUT1;
+											else NS <= STATE_OUT2;
 											end if;
 			--
 			when STATE_OUT2		=> if (S1 = '1') then NS <= STATE_OUT1;
