@@ -4,6 +4,8 @@
 # But not these files...
 !.gitignore
 !*.vhd
+!*.ucf
+!*.jed
 !*.PNG
 
 # ...even if they are in subdirectories
