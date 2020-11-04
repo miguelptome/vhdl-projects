@@ -1,28 +1,25 @@
 ----------------------------------------------------------------------------------
 -- Engineer: Miguel Tome'
--- Create Date: 21:05:45 11/03/2020 
--- Module Name: CouterLogic_NBit - Behavioral
+-- Create Date: 19:48:59 10/27/2020 
+-- Module Name:    CounterLogic_4Bit - Behavioral
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity CouterLogic_NBit is
-	generic (
-		M : positive := 3
-	);
+entity CounterLogic_4Bit is
 	Port ( 
-		operandA : in  STD_LOGIC_VECTOR (2 downto 0);		
+		operandA : in  STD_LOGIC_VECTOR (3 downto 0);		
 		ndecINC : in  STD_LOGIC;
 		en : in  STD_LOGIC;
-		R : out  STD_LOGIC_VECTOR (N-1 downto 0)
+		R : out  STD_LOGIC_VECTOR (3 downto 0)
 	);
-end CouterLogic_NBit;
+end CounterLogic_4Bit;
 
-architecture Behavioral of CouterLogic_NBit is
+architecture Structural of CounterLogic_4Bit is
 
 	COMPONENT MUX2_1
 		generic (
-			N : positive := M
+			N : positive := 4
 		);
 		PORT(	
 			I0 : IN std_logic_vector(N-1 downto 0);
@@ -34,7 +31,7 @@ architecture Behavioral of CouterLogic_NBit is
 	
 	COMPONENT adderNbit
 		generic (
-			N : POSITIVE := M
+			N : POSITIVE := 4
 		);
 		PORT(
 			A : IN std_logic_vector(N-1 downto 0);
@@ -45,20 +42,20 @@ architecture Behavioral of CouterLogic_NBit is
 		);
 	END COMPONENT;
 
-	signal increment : std_logic_vector(2 downto 0);
-	signal operandB : std_logic_vector(2 downto 0);
+	signal increment : std_logic_vector(3 downto 0);
+	signal operandB : std_logic_vector(3 downto 0);
 
 begin
 
 	U0: MUX2_1 PORT MAP(
-		I0 => "111", -- -1 in two's complement
-		I1 => "001",
+		I0 => "1111", -- -1 in two's complement
+		I1 => "0001",
 		Sel => ndecINC,
 		Z => increment
 	);
 	
 	U1: MUX2_1 PORT MAP(
-		I0 => "000",
+		I0 => "0000",
 		I1 => increment,
 		Sel => en,
 		Z => operandB
@@ -72,5 +69,5 @@ begin
 		Cout => open
 	);
 
-end Behavioral;
+end Structural;
 

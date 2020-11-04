@@ -70,7 +70,7 @@ BEGIN
       -- insert stimulus here 
 	
 		en <= '1';
-		ndecinc <= '1';
+		ndecinc <= '0';
 		wait for clk_period*2;
 		
 		--wait for clk_period*2;

@@ -1,12 +1,17 @@
 # ISEL-LIC vhdl-projects
 
-To get to the point when the teacher have finished on the last class (27/10/2020)
-i'll need: 
-
 # TO-DO
 
-## ParkCounter Project
-* SensorDetector
-* ParkCounter Structural Final Project
+## Roullete Game
 
-## Implementar ParkCounter na Placa uLICx
+### Phase 1
+
+**duedate 17/11**
+
+* Key Scan
+	* Key Decoder
+	* Key Controler
+	* Controler
+* Report
+	* Report
+	* Technical specification
