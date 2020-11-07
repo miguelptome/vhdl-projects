@@ -81,11 +81,11 @@ BEGIN
 		CE <= '1';
 		wait for CLK_period*10;
 		
-		CE <= '0';
-		wait for CLK_period*2;
+		--CE <= '0';
+		--wait for CLK_period*2;
 		
-		CE <= '1';
-		wait for CLK_period*10;
+		--CE <= '1';
+		--wait for CLK_period*10;
 
       wait;
    end process;

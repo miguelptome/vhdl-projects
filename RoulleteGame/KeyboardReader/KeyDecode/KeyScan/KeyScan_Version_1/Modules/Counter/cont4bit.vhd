@@ -38,12 +38,17 @@ architecture Structural of cont4bit is
 	END COMPONENT;
 
 	signal Q : std_logic_vector(3 downto 0);
+	
+	signal reset : std_logic;
 
 begin
 
+	-- keep the count between 0 and 11
+	reset <= '1' when RST = '1' or Q = "1100" else '0';
+
 	U0: counter_4bit PORT MAP(
 		clk => CLK,
-		rst => RST,
+		rst => reset,
 		en => CE,
 		ndecinc => '1',
 		q => Q
@@ -53,6 +58,6 @@ begin
 	Q1 <= Q(1);
 	Q2 <= Q(2);
 	Q3 <= Q(3);
-
+	
 end Structural;
 
