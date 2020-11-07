@@ -2,7 +2,7 @@
 -- Company: isel
 -- Engineer: Miguel Tome'
 -- Create Date: 18:29:12 11/04/2020 
--- Module Name: Dec2to3 - Behavioral 
+-- Module Name: Dec2to4 - Behavioral 
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -21,10 +21,10 @@ end Dec2to4;
 architecture Behavioral of Dec2to4 is
 begin
 
-	O0 <= '1' when S0 = '0' and S1 = '0' else '0';
-	O1 <= '1' when S0 = '0' and S1 = '1' else '0';
-	O2 <= '1' when S0 = '1' and S1 = '0' else '0';
-	O3 <= '1' when S0 = '1' and S1 = '1' else '0';
+	O0 <= '1' when S1 = '0' and S0 = '0' else '0';
+	O1 <= '1' when S1 = '0' and S0 = '1' else '0';
+	O2 <= '1' when S1 = '1' and S0 = '0' else '0';
+	O3 <= '1' when S1 = '1' and S0 = '1' else '0';
 
 end Behavioral;
 
