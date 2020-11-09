@@ -36,10 +36,23 @@ begin
 		if (RST = '1') then
 			CS <= STATE_SCAN;
 		elsif (rising_edge(CLK)) then
+			
 			CS <= NS;
+			
+			if (CS = STATE_SCAN and NS /= STATE_VAL) then 
+				Kscan <= '1';
+			else
+				Kscan <= '0';
+			end if;
+			
+		elsif (falling_edge(CLK)) then
+			if (CS /= STATE_SCAN or NS = STATE_VAL) then 
+				Kscan <= '0';
+			end if;
 		end if;
+		
 	end process;
-
+	
 	-- Determine the next state
 	Next_state_evaluation: process(CS, Kpress, Kack) 
 	begin
@@ -62,7 +75,7 @@ begin
 	
 	Kval <= '1' when (CS = STATE_VAL) else '0';
 	
-	Kscan <= '1' when (CS = STATE_SCAN) else '0';
+	-- nao descomentar, porque estamos a fazer a afetacao do kscan em falling edge no processo acima
+	--Kscan <= '1' when (CS = STATE_SCAN) else '0';
 
 end Behavioral;
-

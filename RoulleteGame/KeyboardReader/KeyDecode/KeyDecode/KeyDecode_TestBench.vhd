@@ -97,7 +97,33 @@ BEGIN
 		KB_R1 <= '1';
 		KB_R2 <= '1';
 		KB_R3 <= '1';
-		wait for CLK_period*20;
+		wait for CLK_period*5;
+		
+		Kack <= '1';
+		wait for CLK_period*2;
+		
+		Kack <= '0';
+		KB_R0 <= '1'; -- key up
+		wait for CLK_period*5;
+		
+		KB_R0 <= '0'; -- key down
+		wait for CLK_period*5;
+		
+		Kack <= '1';
+		wait for CLK_period*2;
+		
+		Kack <= '0';
+		KB_R0 <= '1'; -- key up
+		wait for CLK_period*5;
+		
+		KB_R0 <= '0'; -- key down
+		wait for CLK_period*5;
+
+		-- hold reset state for 100 ns.	
+		RST <= '1';
+		wait for 100 ns;	
+		RST <= '0';
+		wait for CLK_period*10;
 
 		--Stimulus process to the 2nd row
 		--keys 4, 5 and 6
@@ -106,7 +132,33 @@ BEGIN
 		KB_R1 <= '0';
 		KB_R2 <= '1';
 		KB_R3 <= '1';
-		wait for CLK_period*20;
+		wait for CLK_period*5;
+		
+		Kack <= '1';
+		wait for CLK_period*2;
+		
+		Kack <= '0';
+		KB_R1 <= '1'; -- key up
+		wait for CLK_period*5;
+		
+		KB_R1 <= '0'; -- key down
+		wait for CLK_period*5;
+		
+		Kack <= '1';
+		wait for CLK_period*2;
+		
+		Kack <= '0';
+		KB_R1 <= '1'; -- key up
+		wait for CLK_period*5;
+		
+		KB_R1 <= '0'; -- key down
+		wait for CLK_period*5;
+
+		-- hold reset state for 100 ns.	
+		RST <= '1';
+		wait for 100 ns;	
+		RST <= '0';
+		wait for CLK_period*10;
 		
 		--Stimulus process to the 3rd row
 		--keys 7, 8 and 9
@@ -115,7 +167,33 @@ BEGIN
 		KB_R1 <= '1';
 		KB_R2 <= '0';
 		KB_R3 <= '1';
-		wait for CLK_period*20;
+		wait for CLK_period*5;
+		
+		Kack <= '1';
+		wait for CLK_period*2;
+		
+		Kack <= '0';
+		KB_R2 <= '1'; -- key up
+		wait for CLK_period*5;
+		
+		KB_R2 <= '0'; -- key down
+		wait for CLK_period*5;
+		
+		Kack <= '1';
+		wait for CLK_period*2;
+		
+		Kack <= '0';
+		KB_R2 <= '1'; -- key up
+		wait for CLK_period*5;
+		
+		KB_R2 <= '0'; -- key down
+		wait for CLK_period*5;
+
+		-- hold reset state for 100 ns.	
+		RST <= '1';
+		wait for 100 ns;	
+		RST <= '0';
+		wait for CLK_period*10;
 		
 		--Stimulus process to the 4th row
 		--keys *, 0 and #
@@ -124,8 +202,28 @@ BEGIN
 		KB_R1 <= '1';
 		KB_R2 <= '1';
 		KB_R3 <= '0';
-		wait for CLK_period*20;
-      
+		wait for CLK_period*5;
+		
+		Kack <= '1';
+		wait for CLK_period*2;
+		
+		Kack <= '0';
+		KB_R3 <= '1'; -- key up
+		wait for CLK_period*5;
+		
+		KB_R3 <= '0'; -- key down
+		wait for CLK_period*5;
+		
+		Kack <= '1';
+		wait for CLK_period*2;
+		
+		Kack <= '0';
+		KB_R3 <= '1'; -- key up
+		wait for CLK_period*5;
+		
+		KB_R3 <= '0'; -- key down
+		wait for CLK_period*5;
+
 		wait;
    end process;
 
