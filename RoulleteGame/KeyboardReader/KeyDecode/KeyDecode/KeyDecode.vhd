@@ -11,6 +11,8 @@ entity KeyDecode is
 	Port ( 
 		CLK : in  STD_LOGIC;
 		RST : in  STD_LOGIC;
+		
+		-- TODO converter para vetor
 		KB_C0 : out  STD_LOGIC;
 		KB_C1 : out  STD_LOGIC;
 		KB_C2 : out  STD_LOGIC;
@@ -56,10 +58,13 @@ architecture Structural of KeyDecode is
 	
 	signal K_scan, K_press : std_logic;
 	
+	-- this is the not CLK
+	signal nCLK : std_logic;
+	
 begin
 
 	U_KeyScan: KeyScan PORT MAP(
-		CLK => CLK,
+		CLK => nCLK,
 		RST => RST,
 		Kscan => K_scan,
 		Kpress => K_press,
@@ -81,6 +86,8 @@ begin
 		Kval => Kval,
 		Kscan => K_scan
 	);
+	
+	nCLK <= not CLK;
 	
 end Structural;
 
