@@ -11,15 +11,8 @@ entity KeyDecode is
 	Port ( 
 		CLK : in  STD_LOGIC;
 		RST : in  STD_LOGIC;
-		
-		-- TODO converter para vetor
-		KB_C0 : out  STD_LOGIC;
-		KB_C1 : out  STD_LOGIC;
-		KB_C2 : out  STD_LOGIC;
-		KB_R0 : in  STD_LOGIC;
-		KB_R1 : in  STD_LOGIC;
-		KB_R2 : in  STD_LOGIC;
-		KB_R3 : in  STD_LOGIC;
+		KB_C : out  STD_LOGIC_VECTOR(2 downto 0); -- coll
+		KB_R : in  STD_LOGIC_VECTOR(3 downto 0); -- row	
 		Kack : in  STD_LOGIC;
 		Kval : out  STD_LOGIC;
 		K : out  STD_LOGIC_VECTOR (3 downto 0)
@@ -69,13 +62,13 @@ begin
 		Kscan => K_scan,
 		Kpress => K_press,
 		K => K,
-		O0 => KB_C0,
-		O1 => KB_C1,
-		O2 => KB_C2,
-		I0 => KB_R0,
-		I1 => KB_R1,
-		I2 => KB_R2,
-		I3 => KB_R3
+		O0 => KB_C(0),
+		O1 => KB_C(1),
+		O2 => KB_C(2),
+		I0 => KB_R(0),
+		I1 => KB_R(1),
+		I2 => KB_R(2),
+		I3 => KB_R(3)
 	);
 
 	U_KeyControl: KeyControl PORT MAP(

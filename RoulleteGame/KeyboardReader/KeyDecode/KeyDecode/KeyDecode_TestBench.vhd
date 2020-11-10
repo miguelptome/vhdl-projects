@@ -18,13 +18,8 @@ ARCHITECTURE behavior OF KeyDecode_TestBench IS
 		PORT(
 			CLK : IN  std_logic;
 			RST : IN  std_logic;
-			KB_C0 : OUT  std_logic;
-			KB_C1 : OUT  std_logic;
-			KB_C2 : OUT  std_logic;
-			KB_R0 : IN  std_logic;
-			KB_R1 : IN  std_logic;
-			KB_R2 : IN  std_logic;
-			KB_R3 : IN  std_logic;
+			KB_C : out  STD_LOGIC_VECTOR(2 downto 0);
+			KB_R : in  STD_LOGIC_VECTOR(3 downto 0);
 			Kack : IN  std_logic;
 			Kval : OUT  std_logic;
 			K : OUT  std_logic_vector(3 downto 0)
@@ -34,16 +29,11 @@ ARCHITECTURE behavior OF KeyDecode_TestBench IS
 	--Inputs
 	signal CLK : std_logic := '0';
 	signal RST : std_logic := '0';
-   signal KB_R0 : std_logic := '1';
-   signal KB_R1 : std_logic := '1';
-   signal KB_R2 : std_logic := '1';
-   signal KB_R3 : std_logic := '1';
+   signal KB_R : std_logic_vector(3 downto 0) := "1111";
    signal Kack : std_logic := '0';
 
  	--Outputs
-   signal KB_C0 : std_logic;
-   signal KB_C1 : std_logic;
-   signal KB_C2 : std_logic;
+   signal KB_C : std_logic_vector(2 downto 0);
    signal Kval : std_logic;
    signal K : std_logic_vector(3 downto 0);
 
@@ -56,13 +46,8 @@ BEGIN
    uut: KeyDecode PORT MAP (
           CLK => CLK,
           RST => RST,
-          KB_C0 => KB_C0,
-          KB_C1 => KB_C1,
-          KB_C2 => KB_C2,
-          KB_R0 => KB_R0,
-          KB_R1 => KB_R1,
-          KB_R2 => KB_R2,
-          KB_R3 => KB_R3,
+          KB_C => KB_C,
+          KB_R => KB_R,
           Kack => Kack,
           Kval => Kval,
           K => K
@@ -93,30 +78,27 @@ BEGIN
 		--Stimulus process to the 1st row
 		--keys 1, 2 and 3
 		Kack <= '0';
-		KB_R0 <= '0';
-		KB_R1 <= '1';
-		KB_R2 <= '1';
-		KB_R3 <= '1';
+		KB_R <= "1110";
 		wait for CLK_period*5;
 		
 		Kack <= '1';
 		wait for CLK_period*2;
 		
 		Kack <= '0';
-		KB_R0 <= '1'; -- key up
+		KB_R(0) <= '1'; -- key up
 		wait for CLK_period*5;
 		
-		KB_R0 <= '0'; -- key down
+		KB_R(0) <= '0'; -- key down
 		wait for CLK_period*5;
 		
 		Kack <= '1';
 		wait for CLK_period*2;
 		
 		Kack <= '0';
-		KB_R0 <= '1'; -- key up
+		KB_R(0) <= '1'; -- key up
 		wait for CLK_period*5;
 		
-		KB_R0 <= '0'; -- key down
+		KB_R(0) <= '0'; -- key down
 		wait for CLK_period*5;
 
 		-- hold reset state for 100 ns.	
@@ -128,30 +110,27 @@ BEGIN
 		--Stimulus process to the 2nd row
 		--keys 4, 5 and 6
 		Kack <= '0';
-		KB_R0 <= '1';
-		KB_R1 <= '0';
-		KB_R2 <= '1';
-		KB_R3 <= '1';
+		KB_R <= "1101";
 		wait for CLK_period*5;
 		
 		Kack <= '1';
 		wait for CLK_period*2;
 		
 		Kack <= '0';
-		KB_R1 <= '1'; -- key up
+		KB_R(1) <= '1'; -- key up
 		wait for CLK_period*5;
 		
-		KB_R1 <= '0'; -- key down
+		KB_R(1) <= '0'; -- key down
 		wait for CLK_period*5;
 		
 		Kack <= '1';
 		wait for CLK_period*2;
 		
 		Kack <= '0';
-		KB_R1 <= '1'; -- key up
+		KB_R(1) <= '1'; -- key up
 		wait for CLK_period*5;
 		
-		KB_R1 <= '0'; -- key down
+		KB_R(1) <= '0'; -- key down
 		wait for CLK_period*5;
 
 		-- hold reset state for 100 ns.	
@@ -163,30 +142,27 @@ BEGIN
 		--Stimulus process to the 3rd row
 		--keys 7, 8 and 9
 		Kack <= '0';
-		KB_R0 <= '1';
-		KB_R1 <= '1';
-		KB_R2 <= '0';
-		KB_R3 <= '1';
+		KB_R <= "1011";
 		wait for CLK_period*5;
 		
 		Kack <= '1';
 		wait for CLK_period*2;
 		
 		Kack <= '0';
-		KB_R2 <= '1'; -- key up
+		KB_R(2) <= '1'; -- key up
 		wait for CLK_period*5;
 		
-		KB_R2 <= '0'; -- key down
+		KB_R(2) <= '0'; -- key down
 		wait for CLK_period*5;
 		
 		Kack <= '1';
 		wait for CLK_period*2;
 		
 		Kack <= '0';
-		KB_R2 <= '1'; -- key up
+		KB_R(2) <= '1'; -- key up
 		wait for CLK_period*5;
 		
-		KB_R2 <= '0'; -- key down
+		KB_R(2) <= '0'; -- key down
 		wait for CLK_period*5;
 
 		-- hold reset state for 100 ns.	
@@ -198,30 +174,27 @@ BEGIN
 		--Stimulus process to the 4th row
 		--keys *, 0 and #
 		Kack <= '0';
-		KB_R0 <= '1';
-		KB_R1 <= '1';
-		KB_R2 <= '1';
-		KB_R3 <= '0';
+		KB_R <= "0111";
 		wait for CLK_period*5;
 		
 		Kack <= '1';
 		wait for CLK_period*2;
 		
 		Kack <= '0';
-		KB_R3 <= '1'; -- key up
+		KB_R(3) <= '1'; -- key up
 		wait for CLK_period*5;
 		
-		KB_R3 <= '0'; -- key down
+		KB_R(3) <= '0'; -- key down
 		wait for CLK_period*5;
 		
 		Kack <= '1';
 		wait for CLK_period*2;
 		
 		Kack <= '0';
-		KB_R3 <= '1'; -- key up
+		KB_R(3) <= '1'; -- key up
 		wait for CLK_period*5;
 		
-		KB_R3 <= '0'; -- key down
+		KB_R(3) <= '0'; -- key down
 		wait for CLK_period*5;
 
 		wait;
