@@ -7,6 +7,10 @@
 !*.ucf
 !*.jed
 !*.PNG
+!*.java
+!*.simul
+!*.properties
+!*.jar
 
 # ...even if they are in subdirectories
 !*/
